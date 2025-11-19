@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslim Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">Muslim pro</div>
+            <ul class="nav-links">
+                <li><a href="#prayer-times"><i class="fas fa-clock"></i> أوقات الصلاة</a></li>
+                <li><a href="#quran"><i class="fas fa-book-open"></i> القرآن الكريم</a></li>
+                <li><a href="#qibla"><i class="fas fa-compass"></i> القبلة</a></li>
+                <li><a href="#tools"><i class="fas fa-tools"></i> أدوات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="prayer-times" class="feature-card">
+            <h2>🕌 أوقات الصلاة والأذان</h2>
+            <div id="times-display">
+                <p><strong>المدينة:</strong> <span id="city-name"></span></p>
+                <p><strong>الوقت الحالي:</strong> <span id="current-time"></span></p>
+                <p><strong>صلاة الفجر:</strong> <span id="fajr-time">--:--</span></p>
+                <p><strong>الصلاة القادمة:</strong> <span id="next-prayer"></span></p>
+                </div>
+            <button class="cta-button">تحديد موقعي</button>
+        </section>
+        
+        <section id="qibla" class="feature-card">
+            <h2>🕋 بوصلة القبلة</h2>
+            <p>لتحديد اتجاه القبلة بدقة من موقعك الحالي.</p>
+            <div class="qibla-compass">
+                <i class="fas fa-location-arrow qibla-arrow" id="qibla-arrow"></i>
+                <div class="qibla-direction" id="qibla-direction">--°</div>
+            </div>
+        </section>
+
+        <section id="quran" class="feature-card">
+            <h2>📖 القرآن الكريم (صوت كامل)</h2>
+            <p>استمع وتدبر القرآن كاملاً بصوت أشهر القراء.</p>
+            <button class="secondary-button">ابدأ التلاوة</button>
+        </section>
+
+        <section id="tools" class="feature-grid">
+            <div class="tool-item">
+                <i class="fas fa-calculator"></i>
+                <h3>حاسبة الزكاة</h3>
+            </div>
+            <div class="tool-item">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>التقويم الهجري</h3>
+            </div>
+            <div class="tool-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>دليل المطاعم والمساجد</h3>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
